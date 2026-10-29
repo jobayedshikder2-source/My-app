@@ -1,0 +1,45 @@
+{
+  "entities": {
+    "User": {
+      "path": "users/{userId}",
+      "description": "Registered community member profiles",
+      "fields": {
+        "id": { "type": "string", "description": "User UID matching auth UID" },
+        "name": { "type": "string", "description": "Full name of the user" },
+        "phoneNumber": { "type": "string", "description": "Contact phone number" },
+        "district": { "type": "string", "description": "District in Bangladesh" },
+        "thana": { "type": "string", "description": "Thana or Upazila" },
+        "fatherName": { "type": "string", "description": "Father's name" },
+        "email": { "type": "string", "description": "Google email" },
+        "status": { "type": "string", "description": "pending, approved, or rejected" },
+        "role": { "type": "string", "description": "admin, president, leader, or member" }
+      }
+    },
+    "Message": {
+      "path": "messages/{messageId}",
+      "description": "Community real-time chat messages",
+      "fields": {
+        "id": { "type": "string", "description": "Message unique identifier" },
+        "groupType": { "type": "string", "description": "general or important" },
+        "senderId": { "type": "string", "description": "UID of the sender" },
+        "senderName": { "type": "string", "description": "Display name of sender" },
+        "senderRole": { "type": "string", "description": "Sender community role" },
+        "text": { "type": "string", "description": "Message text content" },
+        "imageUrl": { "type": "string", "description": "Attached image Uri or URL" },
+        "timestamp": { "type": "number", "description": "Timestamp in milliseconds" },
+        "reactions": { "type": "string", "description": "Emoji reactions" }
+      }
+    },
+    "Announcement": {
+      "path": "announcements/{announcementId}",
+      "description": "Official community emergency and general announcements",
+      "fields": {
+        "id": { "type": "string", "description": "Announcement unique ID" },
+        "text": { "type": "string", "description": "Notice text" },
+        "isActive": { "type": "boolean", "description": "Whether notice is active in marquee" },
+        "authorName": { "type": "string", "description": "Author name" },
+        "authorRole": { "type": "string", "description": "Author role" }
+      }
+    }
+  }
+}

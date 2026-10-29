@@ -1,0 +1,6 @@
+{
+  "name": "Community Hub",
+  "description": "Real-time community messaging and announcement system with approval workflow, live marquee notice bar, and role-based groups.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
